@@ -10,12 +10,31 @@ This fork of [filament-ai-visibility](https://github.com/Israrminhas1/filament-a
 - [x] Update SECURITY.md reporting links
 - [x] Document planned work
 
-## Phase 1 — Cleanup (Planned)
+## Phase 1 — Namespace Cleanup (In Progress)
 
-- [ ] Full PHP namespace rename (`IsrarMinhas\FilamentAiVisibility` → new namespace)
-- [ ] Update all internal references, tests, and service provider
-- [ ] Clean remaining original author branding in docs where appropriate
+**New namespace:** `RoyBiscocho\FilamentAiVisibility`
+
+- [x] Switch `composer.json` autoload + service provider to the new namespace
+- [x] Add `scripts/rename-namespace.sh` (bulk find/replace helper)
+- [ ] Run the rename script on a local clone (updates all `src/` + `tests/` files)
+- [ ] Verify with `composer dump-autoload` and the test suite
+- [ ] Commit the full rename
 - [ ] Tag first release of the fork
+
+### How to finish Phase 1 locally
+
+```bash
+git clone https://github.com/rbiscocho/filament-ai-visibility.git
+cd filament-ai-visibility
+bash scripts/rename-namespace.sh
+composer dump-autoload
+composer test   # optional but recommended
+git add -A
+git commit -m "Phase 1: Complete namespace rename to RoyBiscocho\\FilamentAiVisibility"
+git push
+```
+
+After the script runs, every PHP file will use the new namespace and the package will be consistent.
 
 ## Phase 2 — Fact / Accuracy Layer (Next major feature)
 
