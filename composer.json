@@ -1,6 +1,6 @@
 {
-    "name": "israrminhas/filament-ai-visibility",
-    "description": "Track how your brand appears in ChatGPT, Claude, Gemini, Perplexity and Grok answers, with competitor intelligence. A Filament v4 & v5 plugin.",
+    "name": "rbiscocho/filament-ai-visibility",
+    "description": "Track how your brand appears in ChatGPT, Claude, Gemini, Perplexity and Grok answers, with competitor intelligence. A Filament v4 & v5 plugin. Forked and maintained by Roy Biscocho.",
     "keywords": [
         "laravel",
         "filament",
@@ -11,12 +11,16 @@
         "llm-seo",
         "brand-monitoring"
     ],
-    "homepage": "https://github.com/Israrminhas1/filament-ai-visibility",
+    "homepage": "https://github.com/rbiscocho/filament-ai-visibility",
     "license": "MIT",
     "authors": [
         {
+            "name": "Roy Biscocho",
+            "role": "Maintainer"
+        },
+        {
             "name": "Israr Minhas",
-            "role": "Developer"
+            "role": "Original Author"
         }
     ],
     "require": {
