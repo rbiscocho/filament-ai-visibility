@@ -41,21 +41,22 @@
     },
     "autoload": {
         "psr-4": {
-            "IsrarMinhas\\FilamentAiVisibility\\": "src/"
+            "RoyBiscocho\\FilamentAiVisibility\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "IsrarMinhas\\FilamentAiVisibility\\Tests\\": "tests/"
+            "RoyBiscocho\\FilamentAiVisibility\\Tests\\": "tests/"
         }
     },
     "scripts": {
-        "test": "vendor/bin/pest"
+        "test": "vendor/bin/pest",
+        "rename-namespace": "bash scripts/rename-namespace.sh"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "IsrarMinhas\\FilamentAiVisibility\\AiVisibilityServiceProvider"
+                "RoyBiscocho\\FilamentAiVisibility\\AiVisibilityServiceProvider"
             ]
         }
     },
